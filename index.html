@@ -1,9 +1,81 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Portfolio for Amir Montgomery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;background: #222;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    </style>
+  </head>
+<body class="w3-black">
 
-<body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="/img/Golden Crown.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w2-jumbo"><span class="w3-hide-small">Amir</span> Montgomery</h1>
+    <p>Software Developer & Cybersecurity Specialist</p>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Software Development</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>I began coding in middle school with Arduino in my Robotics Club, where my focus was on exploring programming possibilities rather than just building gadgets. My curiosity led me to create Lua scripts for a text-based MUD and experiment with XHTML for browser-based games.</p>
+    
+    <p>In high school, I took my first programming class and used Python to build a text-based adventure, which solidified my desire to pursue software development. I then attended California Lutheran University, majoring in Computer Science. Although the program was Java-focused, I taught myself Golang and used it for my capstone project, the CyberDuck Cybersecurity Assistant. 
+    </p>
+    
+    <p>The Computer Science program was primarily (almost exclusively) taught in Java, but I spent my final two years teaching myself Golang, which I used to complete my capstone project - the CyberDuck Cybersecurity Assistant, my first foray into an automated solution aimed at assisting users in strengthening their cyber posture.
+    </p>
+    
+    <p>Currently, I am working with Python and C on projects involving networking, encryption, database management, web scraping, and data processing.  
+    </p>
+    
+    <h2 class="w3-text-light-grey">IT & Cybersecurity</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>I started my IT career as a Helpdesk Specialist at my university, where I gained hands-on experience with various technologies and developed a keen interest in cybersecurity. This role involved assisting a local senior community with technology and cybersecurity.</p>
+    
+    <p>In my junior year, I interned with the LA Rams as an IT Desktop Intern & Helpdesk Specialist during their 2022 Super Bowl-winning season, earning my own SB LVI ring. I gained experience in securing portable networks, hardening systems for executives, implementing cybersecurity measures like 2FA and VPNs, and auditing the company’s cybersecurity posture according to the NIST CSF Framework.</p>
+    
+    <p>Afterwards, I returned to my university’s IT Department as a Desktop Specialist, focusing on hardening networks and workstations and finding solutions for using outdated software securely.</p>
+  
+<!-- Footer.  -->
+<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+ <p class="w3-small">Under Construction...</p>
+ <!-- End footer -->
+</footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
 </body>
-
 </html>
