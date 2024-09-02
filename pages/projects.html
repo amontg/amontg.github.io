@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio for Amir Montgomery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .w3-row-padding img {
+            margin-bottom: 12px
+        }
+
+        /* Set the width of the sidebar to 120px */
+        .w3-sidebar {
+            width: 120px;
+            background: #222;
+        }
+
+        /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+        #main {
+            margin-left: 120px
+        }
+
+        /* Remove margins from "page content" on small screens */
+        @media only screen and (max-width: 600px) {
+            #main {
+                margin-left: 0
+            }
+        }
+    </style>
+</head>
+
+<body class="w3-black">
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="/img/Golden Crown.jpg" style="width:100%">
+        <a href="/index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>PROFILE</p>
+        </a>
+        <a href="/pages/projects.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-briefcase w3-xxlarge"></i>
+            <p>PROJECTS</p>
+        </a>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <h1 class="w2-jumbo"><span class="w3-hide-small">Amir</span> Montgomery</h1>
+            <p>Notable Projects</p>
+        </header>
+
+        <!-- Project Section -->
+        <div class="grid gap-8 md:grid-cols-2">
+
+            <div
+                class="bg-white dark:text-gray-100 dark:bg-gray-800 mb-8 overflow-hidden rounded shadow-lg dark:shadow-slate-900">
+                <div class="p-4">
+                    <h2 class="font-bold text-xl mb-2">ACFT Calculator & Client/Server</h2>
+                    <div class="divide-bottom py-3 flex gap-2 mb-3">
+                        <i class="fa fa-github w3-medium"></i> <a
+                            class="flex gap-2 bg-gray-200 px-1 rounded text-gray-700 items-center button text-sm"
+                            href="https://github.com/amontg/Py_ACFT_Calculator/tree/client-server"><span>Repository</span>
+
+                        </a>
+                    </div>
+                    <p class="text-black dark:text-gray-100 text-lg">While not featuring a full-release (primarily
+                        because I do not have a proper server to leave open for use), this project combines the the C
+                        Client/Server with the Python ACFT Calculator. See the video for a demonstration!</p><br />
+                </div>
+
+                <div
+                    class="bg-white dark:text-gray-100 dark:bg-gray-800 mb-8 overflow-hidden rounded shadow-lg dark:shadow-slate-900">
+                    <div class="p-4">
+                        <h2 class="font-bold text-xl mb-2">ACFT Calculator</h2>
+                        <div class="divide-bottom py-3 flex gap-2 mb-3">
+                            <i class="fa fa-github w3-medium"></i> <a
+                                class="flex gap-2 bg-gray-200 px-1 rounded text-gray-700 items-center button text-sm"
+                                href="https://github.com/amontg/Py_ACFT_Calculator"><span>Repository</span>
+
+                            </a>
+                        </div>
+                        <p class="text-black dark:text-gray-100 text-lg">The ACFT Calculator is a project designed for
+                            individual soldiers and NCOs to allow easy calculation and tracking of ACFT scores. There is
+                            a full release available for download and use in the repository.</p><br />
+                    </div>
+
+                    <div
+                        class="bg-white dark:text-gray-100 dark:bg-gray-800 mb-8 overflow-hidden rounded shadow-lg dark:shadow-slate-900">
+                        <div class="p-4">
+                            <h2 class="font-bold text-xl mb-2">C Client/Server</h2>
+                            <div class="divide-bottom py-3 flex gap-2 mb-3">
+                                <i class="fa fa-github w3-medium"></i> <a
+                                    class="flex gap-2 bg-gray-200 px-1 rounded text-gray-700 items-center button text-sm"
+                                    href="https://github.com/amontg/C_CalcClient-Server"><span>Repository</span>
+
+                                </a>
+                            </div>
+                            <p class="text-black dark:text-gray-100 text-lg">My first project and experience writting in
+                                C, this simple client/server application allows a user to send files and messages to and
+                                from a server on their private network. This was created primarily to be ported and
+                                expanded to introduce client/server architecture to the ACFT Calculator. </p><br />
+                        </div>
+
+                        <div
+                            class="bg-white dark:text-gray-100 dark:bg-gray-800 mb-8 overflow-hidden rounded shadow-lg dark:shadow-slate-900">
+                            <div class="p-4">
+                                <h2 class="font-bold text-xl mb-2">GoSpicyRamen</h2>
+                                <div class="divide-bottom py-3 flex gap-2 mb-3">
+                                    <i class="fa fa-github w3-medium"></i> <a
+                                        class="flex gap-2 bg-gray-200 px-1 rounded text-gray-700 items-center button text-sm"
+                                        href="https://github.com/amontg/GoSpicyRamen"><span>Repository</span>
+
+                                    </a>
+                                </div>
+                                <p class="text-black dark:text-gray-100 text-lg">GoSpicyRamen is the continuation of one
+                                    of my first projects - SpicyRamen, a Discord bot written in Java to begin learning
+                                    web scraping, data collection, and data management. GoSpicyRamen is the same idea,
+                                    but written in Go and features the ability to send queries to YouTube, Reddit, and
+                                    UrbanDictionary, collect the results, and display the information in an easy to use
+                                    paginator. </p><br />
+                            </div>
+
+                            <div
+                                class="bg-white dark:text-gray-100 dark:bg-gray-800 mb-8 overflow-hidden rounded shadow-lg dark:shadow-slate-900">
+                                <div class="p-4">
+                                    <h2 class="font-bold text-xl mb-2">Automated AD Audit</h2>
+                                    <div class="divide-bottom py-3 flex gap-2 mb-3">
+                                        <i class="fa fa-github w3-medium"></i> <a
+                                            class="flex gap-2 bg-gray-200 px-1 rounded text-gray-700 items-center button text-sm"
+                                            href="https://github.com/amontg/autoADReport"><span>Repository</span>
+
+                                        </a>
+                                    </div>
+                                    <p class="text-black dark:text-gray-100 text-lg">One of my first projects in Go and
+                                        one of my first projects I used professionally, this simple program allows one
+                                        to easily audit changes between two documents. The complete version is
+                                        unavailable to the public, but it allowed me to easily pull new records from
+                                        Active Directory and compare them with records saved from the previous audit.
+                                        This allowed me to ensure that all onboarded and offboarded employees were
+                                        properly tracked and their equipment properly handled.</p><br />
+                                </div>
+
+                                <!-- Footer.  -->
+                                <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+                                    <p class="w3-small"></p>
+                                    <!-- End footer -->
+                                </footer>
+
+                                <!-- END PAGE CONTENT -->
+                            </div>
+</body>
+
+</html>
